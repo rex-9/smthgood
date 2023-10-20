@@ -35,3 +35,13 @@ jobs:
           channel: "stable"
       - run: flutter clean
       - run: flutter build apk --debug --split-per-abi
+
+  release:
+    name: Release Android
+    needs: [run_tests, build_apk]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/debug/*"
+          tag: v1.0.${{ github.run_number }}
