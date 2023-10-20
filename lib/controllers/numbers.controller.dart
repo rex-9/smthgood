@@ -12,11 +12,11 @@ class NumbersController extends GetxController {
   void submit() {
     final startNumber = int.parse(startNumberController.text);
     final endNumber = int.parse(endNumberController.text);
-    createNumberArray(startNumber, endNumber);
+    populateNumbersArray(startNumber, endNumber);
     goToNumbers();
   }
 
-  List<int> createNumberArray(int start, int end) {
+  List<int> populateNumbersArray(int start, int end) {
     numbers.clear();
     for (int i = start; i <= end; i++) {
       numbers.add(i);

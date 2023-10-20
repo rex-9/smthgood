@@ -11,7 +11,7 @@ class MyForm {
         ),
       );
 
-  ElevatedButton button(formKey, controller) => ElevatedButton(
+  ElevatedButton submitButton(formKey, controller) => ElevatedButton(
         onPressed: () {
           if (formKey.currentState!.validate()) {
             controller.submit();

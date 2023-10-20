@@ -27,7 +27,7 @@ class HomeView extends GetView {
                 myForm.numberField(
                     controller.endNumberController, 'End Number'),
                 const SizedBox(height: 16.0),
-                myForm.button(formKey, controller)
+                myForm.submitButton(formKey, controller)
               ],
             ),
           ),
