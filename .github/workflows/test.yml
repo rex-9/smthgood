@@ -17,9 +17,6 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: "stable"
-      - run: sudo gem install bundler
-      - run: sudo bundle update
-      - run: sudo bundle install
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
