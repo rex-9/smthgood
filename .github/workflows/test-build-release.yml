@@ -5,9 +5,6 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   run_tests:
     name: Run Flutter test and analyze
@@ -43,6 +40,8 @@ jobs:
     name: Release Android
     needs: [run_tests, build_apk]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: ncipollo/release-action@v1
         with:
