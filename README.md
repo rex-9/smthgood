@@ -61,11 +61,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Presentation -->
+<!-- Screenshots -->
 
-## 🚀 Presentation <a name="presentation"></a>
+## 🚀 Screenshots <a name="screenshots"></a>
 
-- [Presentation Link](https://google.com)
+- [Home](./assets/home.png)
+- [Numbers 1](./assets/numbers-1.png)
+- [Numbers 2](./assets/numbers-2.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
