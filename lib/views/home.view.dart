@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:smthgood/components/appbar.components.dart';
-import 'package:smthgood/components/form.components.dart';
+import 'package:smthgood/components/appbar.component.dart';
+import 'package:smthgood/components/form.component.dart';
 import 'package:smthgood/controllers/numbers.controller.dart';
 
 class HomeView extends GetView {

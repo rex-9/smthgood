@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:smthgood/models/number.dart';
 import 'package:smthgood/views/numbers.view.dart';
 
 class NumbersController extends GetxController {
   TextEditingController startNumberController = TextEditingController();
   TextEditingController endNumberController = TextEditingController();
-  RxList<int> numbers = <int>[].obs;
+  RxList<Number> numbers = <Number>[].obs;
 
   goToNumbers() => Get.to(() => const NumbersView());
 
@@ -16,10 +17,10 @@ class NumbersController extends GetxController {
     goToNumbers();
   }
 
-  List<int> populateNumbersArray(int start, int end) {
+  List<Number> populateNumbersArray(int start, int end) {
     numbers.clear();
     for (int i = start; i <= end; i++) {
-      numbers.add(i);
+      numbers.add(Number(value: i));
     }
 
     return numbers;

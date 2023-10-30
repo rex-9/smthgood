@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:smthgood/components/theme.components.dart';
+import 'package:smthgood/components/theme.component.dart';
 
 AppBar myAppBar({title, hasBack = false}) => AppBar(
       backgroundColor: MyTheme().primaryColor,

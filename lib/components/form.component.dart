@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smthgood/components/theme.components.dart';
+import 'package:smthgood/components/theme.component.dart';
 
 class MyForm {
   TextFormField numberField(controller, label) => TextFormField(
